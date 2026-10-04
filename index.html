@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagayashri Glass | Premium Glass Solutions</title>
+<meta name="description" content="Bagayashri Glass — premium glass doors, partitions, railings and custom glass solutions.">
+<style>
+:root{
+  --bg:#090a0b; --panel:#111315; --soft:#181b1e; --text:#f4f1eb;
+  --muted:#a8aaa7; --accent:#c9a96e; --line:rgba(255,255,255,.11);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;width:100%;z-index:20;padding:20px 0;background:rgba(9,10,11,.65);backdrop-filter:blur(16px);border-bottom:1px solid transparent}
+.navbar{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:800;letter-spacing:.06em}.logo span{color:var(--accent)}
+.links{display:flex;gap:30px;color:#d5d4d0;font-size:14px}.links a:hover{color:var(--accent)}
+.navbtn,.primary{background:var(--accent);color:#111;padding:13px 19px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(5,6,7,.97) 0%,rgba(5,6,7,.76) 48%,rgba(5,6,7,.25) 100%),
+url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-content{padding-top:90px;max-width:690px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(48px,7vw,88px);line-height:.96;letter-spacing:-.045em;margin-bottom:25px}
+.hero p{font-size:18px;color:#d0d0cc;max-width:590px;margin-bottom:32px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}.secondary{padding:13px 19px;border:1px solid rgba(255,255,255,.25);border-radius:999px}
+section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}
+.section-head h2{font-size:42px;letter-spacing:-.03em}.section-head p{color:var(--muted);max-width:450px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(201,169,110,.5)}
+.card-img{height:220px;background-size:cover;background-position:center}
+.card-body{padding:22px}.card-body h3{margin-bottom:8px}.card-body p{color:var(--muted);font-size:14px;margin-bottom:18px}.link{color:var(--accent);font-size:14px;font-weight:700}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.about-img{height:550px;border-radius:24px;background:url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85") center/cover}
+.about h2{font-size:50px;line-height:1.05;margin-bottom:20px}.about p{color:var(--muted);margin-bottom:25px}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}.feature{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:15px}.feature b{display:block;margin-bottom:7px}.feature span{color:var(--muted);font-size:14px}
+.quote{background:linear-gradient(135deg,#151515,#0d0e0f);border:1px solid var(--line);border-radius:25px;padding:55px;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+.quote h2{font-size:45px;line-height:1.05}.quote p{color:var(--muted);margin-top:15px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}input,select,textarea{width:100%;padding:15px 16px;background:#0b0c0d;border:1px solid var(--line);border-radius:10px;color:white;font:inherit}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:14px}.footer-row{display:flex;justify-content:space-between;gap:20px}
+.wa{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:25px;z-index:30;box-shadow:0 10px 30px #0008}
+@media(max-width:800px){
+ .links{display:none}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.about-img{height:380px}.quote{grid-template-columns:1fr;padding:32px}.section-head{display:block}.section-head p{margin-top:12px}form{grid-template-columns:1fr}.full{grid-column:auto}
+}
+@media(max-width:520px){section{padding:75px 0}.grid{grid-template-columns:1fr}h1{font-size:52px}.about h2,.quote h2{font-size:38px}.footer-row{display:block}.footer-row div+div{margin-top:10px}}
+</style>
+</head>
+<body>
+
+<nav><div class="container navbar">
+  <a class="logo" href="#">BAGAYASHRI <span>GLASS</span></a>
+  <div class="links"><a href="#products">Products</a><a href="#about">About</a><a href="#work">Our Work</a><a href="#quote">Get a Quote</a></div>
+  <a class="navbtn" href="#quote">Enquire</a>
+</div></nav>
+
+<header class="hero">
+ <div class="container hero-content">
+  <div class="eyebrow">Premium Glass • Crafted for Modern Spaces</div>
+  <h1>Glass that makes a space feel extraordinary.</h1>
+  <p>Elegant glass doors, partitions, railings and custom solutions designed around the way you live and work.</p>
+  <div class="actions"><a class="primary" href="#products">Explore Collection</a><a class="secondary" href="#quote">Request a Quote</a></div>
+ </div>
+</header>
+
+<section id="products"><div class="container">
+ <div class="section-head"><div><div class="eyebrow">Our Collection</div><h2>Built around your space.</h2></div><p>From clean frameless designs to architectural installations, choose a solution and let us customise it to your requirements.</p></div>
+ <div class="grid">
+  <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Glass Doors</h3><p>Frameless, sliding and custom doors for homes and offices.</p><a class="link" href="#quote">Request details →</a></div></article>
+  <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Glass Partitions</h3><p>Open, sophisticated spaces with clean modern lines.</p><a class="link" href="#quote">Request details →</a></div></article>
+  <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Glass Railings</h3><p>Minimal architectural railings with a premium finish.</p><a class="link" href="#quote">Request details →</a></div></article>
+  <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80')"></div><div class="card-body"><h3>Custom Glass</h3><p>Tell us your idea and we will work around your dimensions.</p><a class="link" href="#quote">Start a project →</a></div></article>
+ </div>
+</div></section>
+
+<section id="about"><div class="container about">
+ <div class="about-img"></div>
+ <div><div class="eyebrow">Why Bagayashri</div><h2>Precision in every panel.</h2><p>We believe glass should do more than divide a room. It should bring light, openness and character to it. Every project is planned around your space, measurements and design preferences.</p>
+ <div class="features"><div class="feature"><b>Premium Finish</b><span>Clean detailing and polished results.</span></div><div class="feature"><b>Custom Design</b><span>Made around your dimensions and vision.</span></div><div class="feature"><b>Expert Installation</b><span>Careful fitting from start to finish.</span></div><div class="feature"><b>Personal Service</b><span>One-to-one project assistance.</span></div></div>
+ </div>
+</div></section>
+
+<section id="work"><div class="container">
+ <div class="section-head"><div><div class="eyebrow">Selected Spaces</div><h2>Our work, your inspiration.</h2></div><p>Replace these demo visuals with your real projects to build trust and showcase your best work.</p></div>
+ <div class="grid">
+  <div class="card"><div class="card-img" style="height:300px;background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80')"></div></div>
+  <div class="card"><div class="card-img" style="height:300px;background-image:url('https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=900&q=80')"></div></div>
+  <div class="card"><div class="card-img" style="height:300px;background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80')"></div></div>
+  <div class="card"><div class="card-img" style="height:300px;background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80')"></div></div>
+ </div>
+</div></section>
+
+<section id="quote"><div class="container">
+ <div class="quote"><div><div class="eyebrow">Start a Project</div><h2>Tell us what you're building.</h2><p>Share a few details. We'll get back to you with the next steps.</p></div>
+ <form onsubmit="sendQuote(event)">
+  <input id="name" placeholder="Your name" required><input id="phone" placeholder="Phone number" required>
+  <select id="service"><option>What do you need?</option><option>Glass Door</option><option>Glass Partition</option><option>Glass Railing</option><option>Custom Glass</option><option>Other</option></select>
+  <input id="location" placeholder="Location">
+  <textarea class="full" id="message" placeholder="Tell us about your project, approximate dimensions, quantity, etc."></textarea>
+  <button class="primary full" type="submit">Send Enquiry</button>
+ </form></div>
+</div></section>
+
+<footer><div class="container footer-row"><div>© 2026 Bagayashri Glass. All rights reserved.</div><div>Premium Glass • Design • Installation</div></div></footer>
+<a class="wa" href="https://wa.me/918668495614?text=Hi%20Bagayashri%20Glass%2C%20I%27d%20like%20to%20enquire%20about%20a%20glass%20project." aria-label="WhatsApp">◔</a>
+
+<script>
+function sendQuote(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value, p=document.getElementById('phone').value;
+ const s=document.getElementById('service').value, l=document.getElementById('location').value;
+ const m=document.getElementById('message').value;
+ const text=`Hi Bagayashri Glass,%0A%0AName: ${n}%0APhone: ${p}%0AService: ${s}%0ALocation: ${l}%0AProject: ${m}`;
+ window.open(`https://wa.me/918668495614?text=${text}`,'_blank');
+}
+</script>
+</body>
+</html>
